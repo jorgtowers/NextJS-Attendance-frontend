@@ -1,4 +1,4 @@
-// File: C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\attendance-frontend\app\login\page.tsx
+// File: C:\Users\xntadmin\Desktop\VSCODE\NextJS\Attendance-frontend\NextJS-Attendance-frontend\app\login\page.tsx
 import * as entry from '../../../../app/login/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
