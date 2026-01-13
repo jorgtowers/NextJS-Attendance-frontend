@@ -3,12 +3,14 @@ import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { http } from "@/services/http";
 import { Clock, LogIn, LogOut, User as UserIcon, Calendar } from "lucide-react"; // Opcional: instalando lucide-react
+import { useRouter } from "next/navigation"; // 1. Importar el router
 
 export default function AttendancePage() {
   const { user } = useAuth();
   const [loading, setLoading] = useState(false);
   const [openRecord, setOpenRecord] = useState<any>(null);
   const [checkingStatus, setCheckingStatus] = useState(true);
+  const router = useRouter(); // 2. Inicializar el router
 
   // Función para validar si hay un registro abierto
   const fetchStatus = useCallback(async () => {
@@ -20,6 +22,7 @@ export default function AttendancePage() {
       console.error("Error fetching status", error);
     } finally {
       setCheckingStatus(false);
+      router.push("/attendance"); 
     }
   }, [user?._id]);
 

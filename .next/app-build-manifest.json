@@ -3,6 +3,7 @@
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
     "/login/page": [
@@ -10,10 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/login/page.js"
     ],
-    "/absence/page": [
+    "/attendance/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/absence/page.js"
+      "static/chunks/app/attendance/page.js"
+    ],
+    "/attendance/list/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/attendance/list/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
